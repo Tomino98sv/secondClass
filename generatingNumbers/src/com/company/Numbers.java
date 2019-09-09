@@ -1,11 +1,11 @@
-package com.company;
+/***********************************************každa metoda random nakodena****************************************/
 
+package com.company;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class Numbers {
-
 
     public void generateNumbers() {
         Random rand = new Random();
@@ -21,7 +21,6 @@ public class Numbers {
             }
             System.out.println(values.get(a));
         }
-
         System.out.println("\n");                   //VYGENEROVANIE CISIEL OD 1 DO 20 V NAHODNOM PORADI (NEOPAKUJU SA)
 
         int[] pole = new int[20];                   //Z ARRAYLISTU SA PRESUNU DO POLA KVOLI TOMU ASI DALI PREPISOVAT NA POZICIACH
@@ -42,9 +41,7 @@ public class Numbers {
 
                     }
                 }
-
             }
-
             if(cycling==19){                                        //PRED UKONCENIM CYKLU SKONTROLUJEM VSETKY CISLA CI SA NAHODOU NEPREHODILI TAK ZE VZNIKOL NOVY PAR
                 for (int a=0;a<19;a++){
                     if (pole[a]+1 == pole[a+1] || pole[a]-1 == pole[a+1] || pole[a] == pole[a+1]+1 || pole[a] == pole[a+1]-1){
@@ -53,15 +50,9 @@ public class Numbers {
                 }
             }
         }
-
         System.out.println(" prehadzane \n");
-
         for (int a=0;a<20;a++){
             System.out.println(pole[a]);
         }
-
     }
-
-
-
 }
